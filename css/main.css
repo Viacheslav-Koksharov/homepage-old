@@ -18,8 +18,7 @@ ul {
   list-style-type: none;
   margin-top: 0;
   margin-bottom: 0;
-  -webkit-padding-start: 0;
-          padding-inline-start: 0;
+  padding: 0;
 }
 
 img {
@@ -40,8 +39,8 @@ p {
   background-image: url(../images/usa-flag.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  -webkit-box-shadow: 0px 10px 100px 0px #222426;
-          box-shadow: 0px 10px 100px 0px #222426;
+  -webkit-box-shadow: 0 10px 100px 0 #222426;
+          box-shadow: 0 10px 100px 0 #222426;
 }
 
 @media screen and (min-width: 768px) {
@@ -299,7 +298,7 @@ p {
 }
 
 .linksItem:nth-child(3n + 3) {
-  margin-right: 0px;
+  margin-right: 0;
 }
 
 .linksItem a {
@@ -496,7 +495,5 @@ p {
 
 .buttonUp:hover {
   fill: #425288;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
 }
 /*# sourceMappingURL=main.css.map */
