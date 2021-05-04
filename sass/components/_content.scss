@@ -1,24 +1,53 @@
-// .content {
-// display: flex;
-// }
-
 .primaryContent {
-  // padding-right: 0.2em;
   margin-bottom: 0.7em;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 1.3em;
+  }
 }
 
 .primaryTitle {
   margin-top: 0;
   margin-bottom: 0.2em;
   font-size: 0.7rem;
+
+  @media screen and (min-width: $mobile) {
+    margin-bottom: 0.4em;
+    font-size: 0.9rem;
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 0.6em;
+    font-size: 1.1rem;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 1.3rem;
+  }
 }
 
 .listPrimaryContent {
   font-size: 0.6rem;
+
+  @media screen and (min-width: $mobile) {
+    font-size: 0.7rem;
+  }
+
+  @media screen and (min-width: $tablet) {
+    font-size: 0.8rem;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 0.9rem;
+  }
 }
 
 .listPrimaryContent:not(:last-child) {
   margin-bottom: 0.7em;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 2em;
+  }
 }
 
 .listPrimaryContent li:not(:last-child) {
@@ -29,10 +58,6 @@
   margin-bottom: 0;
 }
 
-// .secondaryContent {
-// padding-left: 0.2em;
-// }
-
 .secondaryContentItem:not(:last-child) {
   margin-bottom: 0.62em;
 }
@@ -41,12 +66,38 @@
   margin-top: 0;
   margin-bottom: 0.2em;
   font-size: 0.7rem;
+
+  @media screen and (min-width: $mobile) {
+    margin-bottom: 0.4em;
+    font-size: 0.9rem;
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 0.6em;
+    font-size: 1.1rem;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 1.3rem;
+  }
 }
 
 .textSecondaryContent {
   margin-top: 0;
   font-size: 0.5rem;
   line-height: 1.4em;
+
+  @media screen and (min-width: $mobile) {
+    font-size: 0.7rem;
+  }
+
+  @media screen and (min-width: $tablet) {
+    font-size: 0.8rem;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 0.9rem;
+  }
 }
 
 .textSecondaryContent .tag:not(:last-child)::after {
@@ -55,7 +106,4 @@
   margin: 0 0.25em 0 0.25em;
   font-family: "Arial", sans-serif;
   font-size: 1rem;
-  // @media screen and (max-width: 479px) {
-  //   font-size: 0.5rem;
-  // }
 }

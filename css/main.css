@@ -1,6 +1,7 @@
 @charset "UTF-8";
 body {
   margin: 0;
+  padding: 100px;
   font-family: Roboto, sans-serif;
 }
 
@@ -34,6 +35,20 @@ p {
   background-image: url(../../images/usa-flag.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  -webkit-box-shadow: 0px 10px 100px 0px #222426;
+          box-shadow: 0px 10px 100px 0px #222426;
+}
+
+@media screen and (min-width: 768px) {
+  .page {
+    padding: 3.5em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page {
+    padding: 5em;
+  }
 }
 
 .sectionPrimary {
@@ -53,6 +68,20 @@ p {
   margin-bottom: 0.62em;
 }
 
+@media screen and (min-width: 480px) {
+  .intro {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+}
+
 .info {
   -ms-flex-preferred-size: 60%;
       flex-basis: 60%;
@@ -65,24 +94,43 @@ p {
   font-weight: 900;
 }
 
+@media screen and (min-width: 480px) {
+  .name {
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .name {
+    font-size: 2.3rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .name {
+    font-size: 3.5rem;
+  }
+}
+
 .job {
   margin-top: 0;
   margin-bottom: 1em;
   font-size: 0.6rem;
 }
 
+@media screen and (min-width: 480px) {
+  .job {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .job {
+    font-size: 1.2rem;
+  }
+}
+
 .contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   padding: 0;
   margin: 0;
   font-size: 0.5rem;
@@ -103,6 +151,35 @@ p {
   color: black;
 }
 
+.listItem a svg {
+  margin-right: 5px;
+  fill: currentColor;
+}
+
+@media screen and (min-width: 480px) {
+  .listItem a {
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .listItem a {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .listItem a {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+  .listItem a svg {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+  }
+}
+
 .facebook:hover {
   color: #3b5998;
 }
@@ -119,14 +196,23 @@ p {
   color: dimgrey;
 }
 
-.icon {
-  margin-right: 5px;
-  fill: currentColor;
-}
-
-.avatar-wrapper {
+.avatarWrapper {
   -ms-flex-preferred-size: 33%;
       flex-basis: 33%;
+}
+
+@media screen and (min-width: 768px) {
+  .avatarWrapper {
+    width: 235px;
+    height: 300px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .avatarWrapper {
+    width: 300px;
+    height: 400px;
+  }
 }
 
 .resumeBox {
@@ -141,8 +227,44 @@ p {
   letter-spacing: 0.25em;
 }
 
+@media screen and (min-width: 480px) {
+  .resumeTitle {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .resumeTitle {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .resumeTitle {
+    font-size: 2.5rem;
+  }
+}
+
 .resumeIntro {
   font-size: 0.6rem;
+}
+
+@media screen and (min-width: 480px) {
+  .resumeIntro {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .resumeIntro {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .resumeIntro {
+    font-size: 1.3rem;
+  }
 }
 
 .links {
@@ -182,8 +304,37 @@ p {
   font-size: 0.7rem;
 }
 
+.linksItem a:hover {
+  color: #810c0c;
+}
+
+@media screen and (min-width: 480px) {
+  .linksItem a {
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .linksItem a {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .linksItem a {
+    font-size: 1.3rem;
+  }
+}
+
 .primaryContent {
   margin-bottom: 0.7em;
+}
+
+@media screen and (min-width: 768px) {
+  .primaryContent {
+    margin-bottom: 1.3em;
+  }
 }
 
 .primaryTitle {
@@ -192,12 +343,56 @@ p {
   font-size: 0.7rem;
 }
 
+@media screen and (min-width: 480px) {
+  .primaryTitle {
+    margin-bottom: 0.4em;
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .primaryTitle {
+    margin-bottom: 0.6em;
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .primaryTitle {
+    font-size: 1.3rem;
+  }
+}
+
 .listPrimaryContent {
   font-size: 0.6rem;
 }
 
+@media screen and (min-width: 480px) {
+  .listPrimaryContent {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .listPrimaryContent {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .listPrimaryContent {
+    font-size: 0.9rem;
+  }
+}
+
 .listPrimaryContent:not(:last-child) {
   margin-bottom: 0.7em;
+}
+
+@media screen and (min-width: 768px) {
+  .listPrimaryContent:not(:last-child) {
+    margin-bottom: 2em;
+  }
 }
 
 .listPrimaryContent li:not(:last-child) {
@@ -218,10 +413,48 @@ p {
   font-size: 0.7rem;
 }
 
+@media screen and (min-width: 480px) {
+  .secondaryTitle {
+    margin-bottom: 0.4em;
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .secondaryTitle {
+    margin-bottom: 0.6em;
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .secondaryTitle {
+    font-size: 1.3rem;
+  }
+}
+
 .textSecondaryContent {
   margin-top: 0;
   font-size: 0.5rem;
   line-height: 1.4em;
+}
+
+@media screen and (min-width: 480px) {
+  .textSecondaryContent {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .textSecondaryContent {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .textSecondaryContent {
+    font-size: 0.9rem;
+  }
 }
 
 .textSecondaryContent .tag:not(:last-child)::after {
@@ -253,5 +486,12 @@ p {
   border-radius: 50%;
   background-color: #7795f7;
   fill: white;
+  cursor: pointer;
+}
+
+.buttonUp:hover {
+  fill: #425288;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 /*# sourceMappingURL=main.css.map */

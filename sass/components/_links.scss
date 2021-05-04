@@ -24,4 +24,21 @@
   padding: 3px;
   color: $primaryTextColor;
   font-size: 0.7rem;
+
+  &:hover {
+    color: $linkHoverColor;
+  }
+
+  @media screen and (min-width: $mobile) {
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+
+  @media screen and (min-width: $tablet) {
+    font-size: 0.9rem;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 1.3rem;
+  }
 }

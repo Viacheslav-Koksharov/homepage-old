@@ -11,4 +11,10 @@
   border-radius: 50%;
   background-color: $buttonColor;
   fill: $svgFillColor;
+  cursor: pointer;
+
+  &:hover {
+    fill: $buttonHoverColor;
+    transform: scale(1.1);
+  }
 }

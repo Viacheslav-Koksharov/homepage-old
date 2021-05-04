@@ -4,6 +4,15 @@
   background-image: url(../../images/usa-flag.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  box-shadow: 0px 10px 100px 0px rgba(34, 36, 38, 10%);
+
+  @media screen and (min-width: $tablet) {
+    padding: 3.5em;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding: 5em;
+  }
 }
 
 .sectionPrimary {
@@ -13,6 +22,10 @@
 .intro {
   @include flexContainer(space-between, center);
   margin-bottom: 0.62em;
+
+  @media screen and (min-width: $mobile) {
+    @include flexContainer(space-between, stretch);
+  }
 }
 
 .info {
@@ -24,56 +37,109 @@
   margin-bottom: 0.62em;
   font-size: 1rem;
   font-weight: 900;
+
+  @media screen and (min-width: $mobile) {
+    font-size: 1.7rem;
+  }
+
+  @media screen and (min-width: $tablet) {
+    font-size: 2.3rem;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 3.5rem;
+  }
 }
 
 .job {
   margin-top: 0;
   margin-bottom: 1em;
   font-size: 0.6rem;
+
+  @media screen and (min-width: $mobile) {
+    font-size: 0.8rem;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 1.2rem;
+  }
 }
 
 .contacts {
-  @include flexContainer(flex-start, stretch);
-  flex-wrap: wrap;
   padding: 0;
   margin: 0;
   font-size: 0.5rem;
   font-weight: 400;
-
-  // @media screen and (max-width: 1199px) {
-  //   display: block;
-  // }
 }
 
-.listItem a {
-  @include flexContainer(flex-start, center);
-  padding: 5px;
-  color: $primaryTextColor;
+.listItem {
+  & a {
+    @include flexContainer(flex-start, center);
+    padding: 5px;
+    color: $primaryTextColor;
+
+    & svg {
+      margin-right: 5px;
+      fill: currentColor;
+    }
+
+    @media screen and (min-width: $mobile) {
+      font-size: 0.6rem;
+    }
+
+    @media screen and (min-width: $tablet) {
+      font-size: 0.7rem;
+    }
+
+    @media screen and (min-width: $desktop) {
+      padding: 10px;
+      font-size: 0.9rem;
+
+      & svg {
+        width: 30px;
+        height: 30px;
+        margin-right: 15px;
+      }
+    }
+  }
 }
 
-.facebook:hover {
-  color: #3b5998;
+.facebook {
+  &:hover {
+    color: #3b5998;
+  }
 }
 
-.mail:hover {
-  color: dimgrey;
+.mail {
+  &:hover {
+    color: dimgrey;
+  }
 }
 
-.twitter:hover {
-  color: #00aff0;
+.twitter {
+  &:hover {
+    color: #00aff0;
+  }
 }
 
-.instagram:hover {
-  color: dimgrey;
+.instagram {
+  &:hover {
+    color: dimgrey;
+  }
 }
 
-.icon {
-  margin-right: 5px;
-  fill: currentColor;
-}
-
-.avatar-wrapper {
+.avatarWrapper {
   flex-basis: 33%;
+
+  @media screen and (min-width: $tablet) {
+    width: 235px;
+    height: 300px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 300px;
+    height: 400px;
+  }
 }
 
 .resumeBox {
@@ -86,8 +152,32 @@
   font-size: 0.8rem;
   font-weight: 900;
   letter-spacing: 0.25em;
+
+  @media screen and (min-width: $mobile) {
+    font-size: 1rem;
+  }
+
+  @media screen and (min-width: $tablet) {
+    font-size: 1.5rem;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 2.5rem;
+  }
 }
 
 .resumeIntro {
   font-size: 0.6rem;
+
+  @media screen and (min-width: $mobile) {
+    font-size: 0.8rem;
+  }
+
+  @media screen and (min-width: $tablet) {
+    font-size: 0.9rem;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 1.3rem;
+  }
 }
