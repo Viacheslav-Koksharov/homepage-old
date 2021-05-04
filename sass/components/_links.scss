@@ -1,0 +1,44 @@
+.links {
+  margin-bottom: 0.5em;
+}
+
+.linksList {
+  @include flexContainer(flex-start, stretch);
+  flex-wrap: wrap;
+  padding-bottom: 0.5em;
+  border-bottom: 0.2em solid $primaryTextColor;
+}
+
+.linksItem {
+  margin-right: 20px;
+  width: calc((100% - 40px) / 3);
+  text-align: center;
+}
+
+.linksItem:nth-child(3n + 3) {
+  margin-right: 0px;
+}
+
+.linksItem a {
+  display: block;
+  padding: 3px;
+  color: $primaryTextColor;
+  font-size: 0.7rem;
+
+  &:hover {
+    color: $linkHoverColor;
+  }
+
+  @media screen and (min-width: $mobile) {
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+
+  @media screen and (min-width: $tablet) {
+    font-size: 0.9rem;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 1.3rem;
+  }
+}
