@@ -1,0 +1,93 @@
+.page {
+  margin: 0 auto;
+  padding: 1.875em;
+  background-image: url(../../images/usa-flag.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sectionPrimary {
+  margin-bottom: 0.5em;
+}
+
+.intro {
+  @include flexContainer(space-between, center);
+  margin-bottom: 0.62em;
+}
+
+.info {
+  flex-basis: 60%;
+}
+
+.name {
+  margin-top: 0;
+  margin-bottom: 0.62em;
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+.job {
+  margin-top: 0;
+  margin-bottom: 1em;
+  font-size: 0.6rem;
+}
+
+.contacts {
+  @include flexContainer(flex-start, stretch);
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  font-size: 0.5rem;
+  font-weight: 400;
+
+  // @media screen and (max-width: 1199px) {
+  //   display: block;
+  // }
+}
+
+.listItem a {
+  @include flexContainer(flex-start, center);
+  padding: 5px;
+  color: $primaryTextColor;
+}
+
+.facebook:hover {
+  color: #3b5998;
+}
+
+.mail:hover {
+  color: dimgrey;
+}
+
+.twitter:hover {
+  color: #00aff0;
+}
+
+.instagram:hover {
+  color: dimgrey;
+}
+
+.icon {
+  margin-right: 5px;
+  fill: currentColor;
+}
+
+.avatar-wrapper {
+  flex-basis: 33%;
+}
+
+.resumeBox {
+  border-bottom: 0.2em solid $primaryTextColor;
+}
+
+.resumeTitle {
+  margin: 0;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 900;
+  letter-spacing: 0.25em;
+}
+
+.resumeIntro {
+  font-size: 0.6rem;
+}
